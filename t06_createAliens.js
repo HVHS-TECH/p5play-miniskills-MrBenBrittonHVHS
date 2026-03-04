@@ -9,8 +9,8 @@
 /*******************************************************/
 function setup() {
 console.log("setup: ");
-cnv = new Canvas(500, 800);
-world.gravity.y = 10;
+cnv = new Canvas(500, 500);
+/* world.gravity.y = 10;
 
 
 box = new Sprite(50,50,100,200,'k');
@@ -23,7 +23,7 @@ box.vel.x = 2;
 
 circle = new Sprite(200,200,100, 'd');
 
-circle.color = 'blue';
+circle.color = 'blue'; */
 /*
 platform_1 = new Sprite(60, 300, 300, 5, 'k');
 platform_1.rotation = 5;
@@ -44,9 +44,14 @@ wallRH  = new Sprite(width, height/2, 5, height, 'k');
 wallTop = new Sprite(width/2, 0, width, 5, 'k');
 
 wallBot = new Sprite(width/2, height, width, 5, 'k');
-for (var i = 0; i < 10; i++) {
 
-  alien = new Sprite(random(0,width),random(height,0),10);
+for (var i = 0; i < 20; i++) {
+  alien = new Sprite(random(0,width),random(height,0),40,40);
+}
+
+/* for (var i = 0; i < 10; i++) {
+
+  alien = new Sprite(random(0,width),random(height,0),20,20);
 
 const VELARRAY = [-1, 1];
 
@@ -61,7 +66,7 @@ randNum = random(4, 7) * random(VELARRAY);
 
   alien.friction = 0;
 
-}
+} */
 }
 	
 /*******************************************************/
